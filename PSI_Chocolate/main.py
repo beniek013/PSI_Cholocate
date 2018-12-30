@@ -3,7 +3,7 @@ from sklearn import linear_model
 from sklearn.metrics import r2_score
 
 def linearChocolatePrediction():
-    df = panda.read_csv("flavors_of_cacao.csv", sep=',')
+    df = panda.read_csv("chocolateEdit.csv", sep=';')
     reg = linear_model.LinearRegression()
     reg.fit(df[['ReviewDate', 'Percent']], df.Rating)
 
